@@ -15,7 +15,7 @@ TASKS should be a flat list, while they can be cross referenced. They should onl
 
 It should also offer a way of registering different projects.
 
-So the usage should be similar to mai-project-mcp --get-one-by-priority --project "bgm"
+So the usage should be similar to mai-space-project-mcp --get-one-by-priority --project "bgm"
 
 It should be really lightweight, so maybe a simple sql lite db and written in typescript?
 
@@ -177,7 +177,7 @@ Otherwise dead tasks become a major issue.
 Example:
 
 ```bash
-mai-project-mcp claim --project bgm
+mai-space-project-mcp claim --project bgm
 ```
 
 returns:
