@@ -1,5 +1,5 @@
 {
-  "name": "@mai/mcp",
+  "name": "@mai-space/mcp",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -17,8 +17,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@mai/shared-types": "*",
-    "@mai/core": "*",
+    "@mai-space/shared-types": "*",
+    "@mai-space/core": "*",
     "@modelcontextprotocol/sdk": "^1.7.0"
   }
 }
