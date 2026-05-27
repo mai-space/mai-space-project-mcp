@@ -1,9 +1,14 @@
 #!/usr/bin/env node
 import { startServer } from './server.js';
 
-const port = parseInt(process.argv[process.argv.indexOf('--port') + 1] ?? '3456', 10);
-const host = process.argv[process.argv.indexOf('--host') + 1] ?? 'localhost';
-const dbPath = process.argv[process.argv.indexOf('--db') + 1] ?? process.env.MAI_DB_PATH ?? './mai.db';
+function getArg(flag: string, fallback: string): string {
+  const idx = process.argv.indexOf(flag);
+  return idx !== -1 ? process.argv[idx + 1] : fallback;
+}
+
+const port = parseInt(getArg('--port', '3456'), 10);
+const host = getArg('--host', 'localhost');
+const dbPath = getArg('--db', process.env.MAI_DB_PATH ?? './mai.db');
 
 const server = await startServer({ port, host, dbPath });
 console.log(`MAI server running at ${server.url}`);
