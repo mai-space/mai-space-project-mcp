@@ -1,0 +1,27 @@
+{
+  "name": "mai-project-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI Agent Task Orchestration System — MCP Server + CLI + Dashboard",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "npm run dev --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "format": "prettier --write .",
+    "mai": "node apps/cli/dist/index.js"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.0",
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
