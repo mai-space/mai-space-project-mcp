@@ -46,14 +46,14 @@ export async function startServer(options: ServerOptions = {}) {
   try {
     await app.register(import('@fastify/static'), {
       root: new URL('../../dashboard/dist', import.meta.url),
-      prefix: '/',
+      prefix: '/dashboard',
       wildcard: false,
     });
   } catch {
   }
 
   app.get('/', async (_req, reply) => {
-    return reply.redirect('/health');
+    return { status: 'ok', name: 'mai-space-project-mcp' };
   });
 
   const url = await app.listen({ port, host });

@@ -133,7 +133,7 @@ cat > "$BIN_DIR/mai-space-serve" << 'WRAPPER'
 set -euo pipefail
 MAI_HOME="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
 MAI_DB_PATH="${MAI_DB_PATH:-"$MAI_HOME/data/mai.db"}"
-exec node "$MAI_HOME/lib/apps/server/dist/index.js" --db "$MAI_DB_PATH" "$@"
+exec node "$MAI_HOME/lib/apps/server/dist/main.js" --db "$MAI_DB_PATH" "$@"
 WRAPPER
 
 chmod +x "$BIN_DIR/mai-space-serve"

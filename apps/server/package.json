@@ -5,7 +5,7 @@
   "type": "module",
   "main": "./dist/index.js",
   "bin": {
-    "mai-space-serve": "./dist/index.js"
+    "mai-space-serve": "./dist/main.js"
   },
   "scripts": {
     "build": "tsc",
