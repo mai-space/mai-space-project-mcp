@@ -1,5 +1,5 @@
 {
-  "name": "@mai/cli",
+  "name": "@mai-space/cli",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -13,9 +13,9 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@mai/core": "*",
-    "@mai/db": "*",
-    "@mai/shared-types": "*",
+    "@mai-space/core": "*",
+    "@mai-space/db": "*",
+    "@mai-space/shared-types": "*",
     "commander": "^13.1.0"
   }
 }
