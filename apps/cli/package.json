@@ -1,0 +1,21 @@
+{
+  "name": "@mai/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "mai": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@mai/core": "*",
+    "@mai/db": "*",
+    "@mai/shared-types": "*",
+    "commander": "^13.1.0"
+  }
+}
