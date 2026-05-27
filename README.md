@@ -5,7 +5,7 @@ A lightweight AI Agent Task Orchestration System. Manage tasks for autonomous ag
 ## Architecture
 
 ```
-mai-project-mcp/
+mai-space-project-mcp/
 ├── packages/
 │   ├── shared-types/    # TypeScript interfaces (Project, Task, Agent, etc.)
 │   ├── db/              # SQLite database via Kysely (schema, queries, migrations)
@@ -22,7 +22,7 @@ mai-project-mcp/
 
 ```bash
 # Install
-curl -fsSL https://raw.githubusercontent.com/user/mai-project-mcp/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mai-space/mai-space-project-mcp/main/scripts/install.sh | bash
 
 # Or from source:
 npm install
@@ -127,13 +127,13 @@ OPEN ──[claim]──> IN_PROGRESS ──[complete]──> DONE
 
 | Package | Description |
 |---------|-------------|
-| `@mai/shared-types` | TypeScript interfaces and types |
-| `@mai/db` | SQLite database layer (Kysely ORM) |
-| `@mai/core` | Business logic orchestrator |
-| `@mai/mcp` | Model Context Protocol server |
-| `@mai/server` | Fastify HTTP server |
-| `@mai/cli` | Command-line interface |
-| `@mai/dashboard` | React web dashboard |
+| `@mai-space/shared-types` | TypeScript interfaces and types |
+| `@mai-space/db` | SQLite database layer (Kysely ORM) |
+| `@mai-space/core` | Business logic orchestrator |
+| `@mai-space/mcp` | Model Context Protocol server |
+| `@mai-space/server` | Fastify HTTP server |
+| `@mai-space/cli` | Command-line interface |
+| `@mai-space/dashboard` | React web dashboard |
 
 ## Development
 

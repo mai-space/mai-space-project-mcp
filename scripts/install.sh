@@ -8,7 +8,7 @@ set -euo pipefail
 # Or:    bash install.sh [--dir <path>] [--version <tag>]
 # ──────────────────────────────────────────────────
 
-REPO="maispace/mai-project-mcp"
+REPO="mai-space/mai-project-mcp"
 INSTALL_DIR="${MAI_INSTALL_DIR:-${DIR:-"$HOME/.mai"}}"
 BIN_DIR="$INSTALL_DIR/bin"
 VERSION="${VERSION:-latest}"
@@ -128,7 +128,7 @@ WRAPPER
 chmod +x "$BIN_DIR/mai"
 
 # Create server wrapper
-cat > "$BIN_DIR/mai-serve" << 'WRAPPER'
+cat > "$BIN_DIR/mai-space-serve" << 'WRAPPER'
 #!/usr/bin/env bash
 set -euo pipefail
 MAI_HOME="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
@@ -136,7 +136,7 @@ MAI_DB_PATH="${MAI_DB_PATH:-"$MAI_HOME/data/mai.db"}"
 exec node "$MAI_HOME/lib/apps/server/dist/index.js" --db "$MAI_DB_PATH" "$@"
 WRAPPER
 
-chmod +x "$BIN_DIR/mai-serve"
+chmod +x "$BIN_DIR/mai-space-serve"
 
 # Copy built source to install dir
 mkdir -p "$INSTALL_DIR/lib"
