@@ -8,7 +8,7 @@ export function registerServeCommand(program: Command) {
     .option('--host <host>', 'Host address', 'localhost')
     .option('--db <path>', 'Database file path')
     .action(async (opts) => {
-      const { startServer } = await import('@mai/server');
+      const { startServer } = await import('@mai-space/server');
       const server = await startServer({
         port: Number(opts.port),
         host: opts.host,

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Command } from 'commander';
-import { Database } from '@mai/db';
-import { TaskOrchestrator } from '@mai/core';
+import { Database } from '@mai-space/db';
+import { TaskOrchestrator } from '@mai-space/core';
 import { registerProjectCommands } from './commands/projects.js';
 import { registerTaskCommands } from './commands/tasks.js';
 import { registerServeCommand } from './commands/serve.js';

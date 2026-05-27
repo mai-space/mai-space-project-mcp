@@ -1,6 +1,6 @@
 import type { Command } from 'commander';
 
-export function registerTaskCommands(program: Command, createOrchestrator: () => import('@mai/core').TaskOrchestrator) {
+export function registerTaskCommands(program: Command, createOrchestrator: () => import('@mai-space/core').TaskOrchestrator) {
   const tasks = program.command('tasks').description('Manage tasks');
 
   tasks

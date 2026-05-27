@@ -1,6 +1,6 @@
 import type { Command } from 'commander';
 
-export function registerProjectCommands(program: Command, createOrchestrator: () => import('@mai/core').TaskOrchestrator) {
+export function registerProjectCommands(program: Command, createOrchestrator: () => import('@mai-space/core').TaskOrchestrator) {
   const projects = program.command('projects').description('Manage projects');
 
   projects
