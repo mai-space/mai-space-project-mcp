@@ -137,7 +137,7 @@ export class Database {
         lockExpiresAt TEXT,
         createdBy TEXT,
         assignedTo TEXT,
-        references TEXT NOT NULL DEFAULT '[]',
+        "references" TEXT NOT NULL DEFAULT '[]',
         blockerReason TEXT,
         claimCount INTEGER NOT NULL DEFAULT 0,
         lastClaimedAt TEXT,
