@@ -1,8 +1,8 @@
 import Fastify from 'fastify';
 import cors from '@fastify/cors';
-import { Database } from '@mai/db';
-import { TaskOrchestrator } from '@mai/core';
-import { createMcpServer } from '@mai/mcp';
+import { Database } from '@mai-space/db';
+import { TaskOrchestrator } from '@mai-space/core';
+import { createMcpServer } from '@mai-space/mcp';
 import { SSEServerTransport } from '@modelcontextprotocol/sdk/server/sse.js';
 import { registerRoutes } from './routes/index.js';
 

@@ -1,6 +1,6 @@
 import type { FastifyInstance } from 'fastify';
-import type { TaskOrchestrator } from '@mai/core';
-import type { CreateBlockerTaskInput, CreateProjectInput, CreateTaskInput } from '@mai/shared-types';
+import type { TaskOrchestrator } from '@mai-space/core';
+import type { CreateBlockerTaskInput, CreateProjectInput, CreateTaskInput } from '@mai-space/shared-types';
 
 export function registerRoutes(app: FastifyInstance, orchestrator: TaskOrchestrator) {
 
