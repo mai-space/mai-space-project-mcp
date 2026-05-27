@@ -8,7 +8,7 @@ set -euo pipefail
 # Or:    bash install.sh [--dir <path>] [--version <tag>]
 # ──────────────────────────────────────────────────
 
-REPO="mai-space/mai-project-mcp"
+REPO="mai-space/mai-space-project-mcp"
 INSTALL_DIR="${MAI_INSTALL_DIR:-${DIR:-"$HOME/.mai"}}"
 BIN_DIR="$INSTALL_DIR/bin"
 VERSION="${VERSION:-latest}"
