@@ -4,7 +4,7 @@ import type {
   Project, Task, TaskRelation, ActivityLog, Agent,
   CreateProjectInput, CreateTaskInput, CreateRelationInput,
   TaskFilters, TaskStatus,
-} from '@mai/shared-types';
+} from '@mai-space/shared-types';
 
 interface ProjectsTable {
   id: string;

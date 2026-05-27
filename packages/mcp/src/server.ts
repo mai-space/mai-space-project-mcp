@@ -1,11 +1,11 @@
 import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
-import type { TaskOrchestrator } from "@mai/core";
+import type { TaskOrchestrator } from "@mai-space/core";
 
 export function createMcpServer(orchestrator: TaskOrchestrator) {
   const server = new McpServer(
-    { name: "mai-project-mcp", version: "0.1.0" },
+    { name: "mai-space-project-mcp", version: "0.1.0" },
     { capabilities: { tools: {}, resources: {}, prompts: {} } }
   );
 

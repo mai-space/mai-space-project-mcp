@@ -2,8 +2,8 @@ import type {
   Project, Task, ClaimResult, LeaseRenewalResult, ActivityLog, Agent,
   CreateProjectInput, CreateTaskInput, CreateBlockerTaskInput,
   TaskFilters, TaskStatus,
-} from '@mai/shared-types';
-import { Database } from '@mai/db';
+} from '@mai-space/shared-types';
+import { Database } from '@mai-space/db';
 
 export interface OrchestratorConfig {
   defaultLeaseDurationMs?: number;
